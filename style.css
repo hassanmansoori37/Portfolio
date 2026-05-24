@@ -14,43 +14,114 @@ body{
   color: white;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 
 nav{
-  width: 100%;
-  background-color: #111827;
-  padding: 18px 8%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 100%;
 
-  position: sticky;
-  top: 0;
+    background-color: #111827;
+
+    padding: 18px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
 }
 
-.logo{
-  font-size: 28px;
-  font-weight: bold;
-  color: #38bdf8;
-  /* width: 20px;
-  height: 20px; */
+
+
+/* ===== Logo ===== */
+
+.logo img{
+
+    width: 230px;
+
+    object-fit: contain;
+
+    cursor: pointer;
 }
+
+
+
+/* ===== Nav Links ===== */
 
 nav ul{
-  display: flex;
-  list-style: none;
-  gap: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    list-style: none;
 }
+
 
 nav ul li a{
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    transition: 0.3s;
 }
 
+
 nav ul li a:hover{
-  color: #38bdf8;
+
+    color: #38bdf8;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    nav{
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 15px 5%;
+    }
+
+
+    .logo img{
+
+        width: 190px;
+    }
+
+
+    nav ul{
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+
+    nav ul li a{
+
+        font-size: 17px;
+    }
+
 }
 
 /* Resume btn */
@@ -72,44 +143,179 @@ nav ul li a:hover{
    background-color: #0284c7;
 }
 
-/* Hero */
-.hero {
-    min-width: 90vh;
+/* ================= HERO SECTION ================= */
+
+.hero{
+
+    min-height: 100vh;
+
     display: flex;
-    justify-content: center;
+
     align-items: center;
-    text-align: center;
-    padding: 20px;
+
+    padding: 40px 8%;
+
+    background-color: #0f172a;
 }
 
-.hero-content h1 {
-    font-size: 60px;
-    margin-bottom: 15px;
+
+.hero-container{
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
 }
+
+
+
+/* ===== Left Content ===== */
+
+.hero-content{
+
+    flex: 1;
+}
+
+
+.hero-content h1{
+
+    font-size: 65px;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
 
 .hero-content span{
+
     color: #38bdf8;
 }
 
-.hero-content p {
-    font-size: 20px;
+
+.hero-content p{
+
+    font-size: 24px;
+
     color: #cbd5e1;
-    margin-bottom: 25px;
+
+    margin-bottom: 30px;
+
+    min-height: 40px;
 }
 
-.hero-content button{
-  padding: 12px 25px;
-  border: none;
-  background-color: #38bdf8;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: 0.3s;
+
+
+/* ===== Buttons ===== */
+
+.hero-buttons{
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
 }
 
-.hero-content button:hover{
-  background-color: #0284c7;
+
+.hero-buttons button{
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+
+    background-color: #38bdf8;
+
+    color: white;
+}
+
+
+.hero-buttons button:hover{
+
+    background-color: #0284c7;
+}
+
+
+.cv-btn{
+
+    background-color: transparent !important;
+
+    border: 2px solid #38bdf8 !important;
+}
+
+
+
+/* ===== Right Image ===== */
+
+.hero-image{
+
+    flex: 1;
+
+    text-align: center;
+}
+
+
+.hero-image img{
+
+    width: 100%;
+
+    max-width: 500px;
+
+    object-fit: contain;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .hero-container{
+
+        flex-direction: column-reverse;
+
+        text-align: center;
+    }
+
+
+    .hero-content h1{
+
+        font-size: 45px;
+    }
+
+
+    .hero-content p{
+
+        font-size: 18px;
+    }
+
+
+    .hero-buttons{
+
+        justify-content: center;
+    }
+
+
+    .hero-image img{
+
+        max-width: 320px;
+    }
+
 }
 
 section{

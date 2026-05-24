@@ -14,7 +14,9 @@
     <!-- Navbar -->
 
     <nav>
-        <div class="logo">Hassan</div>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="">
+        </div>
         <ul>
             <li><a href="#home"></a>Home</li>
             <li><a href="#about"></a>About</li>
@@ -29,17 +31,64 @@
     </header>
 
     <main>
-        <!-- Hero -->
-         <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>I'm <span>Hassan Mansoori</span> </h1>
-                <p><span id="element"></span></p>
-                <button onclick="scrollToProjects()">View Projects</button>
+        <!-- Hero Section -->
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+
+        <!-- Left Content -->
+
+        <div class="hero-content">
+
+            <h1>
+
+                Hi, I'm <span>Hassan</span>
+
+            </h1>
+
+
+            <p id="element"></p>
+
+
+            <div class="hero-buttons">
+
+                <button onclick="scrollToProjects()">
+
+                    View Projects
+
+                </button>
+
+
+                <a href="./assets/Hassan Mansoori - CV.pdf"
+                download>
+
+                    <button class="cv-btn">
+
+                        Download CV
+
+                    </button>
+
+                </a>
 
             </div>
 
-         </section>
+        </div>
 
+
+
+        <!-- Right Image -->
+
+        <div class="hero-image">
+
+            <img src="./assets/home-right.png" alt="Developer Image">
+
+        </div>
+
+    </div>
+
+</section>
          <!-- About -->
           <section class="about-section" id="about">
             <h2 class="title">About Me</h2>
@@ -199,6 +248,35 @@
   
     </main>
     
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+
+var typed = new Typed('#element', {
+
+   strings: [
+
+      'Frontend Developer',
+
+   'Frontend Developer | React Learner',
+
+   'Frontend Developer | React Learner | Learning MERN Stack',
+
+   'Frontend Developer | React Learner | Learning MERN Stack | Passionate About Web Development'
+
+   ],
+
+   typeSpeed: 40,
+
+   backSpeed: 10,
+
+   backDelay: 1000,
+
+   loop: true,
+
+}); 
+
+</script>
 
 
 
