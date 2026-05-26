@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hassan Portfolio</title>
      <!-- Font Awesome -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
@@ -13,21 +13,49 @@
     <header>
     <!-- Navbar -->
 
-    <nav>
-        <div class="logo">
-            <img src="./assets/logo.png" alt="">
-        </div>
-        <ul>
-            <li><a href="#home"></a>Home</li>
-            <li><a href="#about"></a>About</li>
-            <li><a href="#skills"></a>Skills</li>
-            <li><a href="#projects"></a>Projects</li>
-            <li><a href="#contact"></a>Contact</li>
-            <li>
-                <a href="./assets/Hassan Mansoori  - CV (8).pdf" class="resume-btn" download>Resume</a>
+   <nav>
+
+    <!-- Logo -->
+
+    <div class="logo">
+
+        <img src="./assets/logo.png" alt="">
+
+    </div>
+
+
+
+    <!-- Menu Icon -->
+
+    <div class="menu-icon" onclick="toggleMenu()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+
+
+    <!-- Nav Links -->
+
+    <ul id="navLinks">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+        <li>
+                <a href="./assets/Muhammad_Hassan_CV.pdf" class="resume-btn" download="">Resume</a>
             </li>
-        </ul>
-    </nav>
+
+    </ul>
+
+</nav>
     </header>
 
     <main>
@@ -44,7 +72,7 @@
 
             <h1>
 
-                Hi, I'm <span>Hassan</span>
+                Hi, I'm <span>Hassan Mansoori</span>
 
             </h1>
 
@@ -61,12 +89,12 @@
                 </button>
 
 
-                <a href="./assets/Hassan Mansoori - CV.pdf"
+                <a href="./assets/Muhammad_Hassan_CV.pdf"
                 download>
 
-                    <button class="cv-btn">
+                    <button class="hire-btn">
 
-                        Download CV
+                        Hire Me
 
                     </button>
 
@@ -130,8 +158,10 @@
                 <div>
 
                     <strong>Email:</strong>
+                    <br />
 
-                    <p>yourgmail@gmail.com</p>
+                     <a href="mailto:mansoorihassan409@gmail.com">mansoorihassan409@gmail.com </a>
+
 
                 </div>
 
@@ -156,11 +186,11 @@
             </div>
 
 
-            <a href="./assets/Hassan Mansoori  - CV.pdf"
+            <a href="./assets/Muhammad_Hassan_CV.pdf"
             download
             class="about-btn">
 
-                Download CV
+                Hire Me
 
             </a>
             </div>
@@ -246,45 +276,211 @@
   </section>
 
   
-    </main>
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <h2 class="title">Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>Todo App</h3>
+        <p>
+  Built a fully functional and responsive Todo application using HTML, CSS, and JavaScript.
+  The app allows users to add, edit, delete, and mark tasks as completed or pending.
+  It uses Local Storage to save data permanently in the browser, ensuring tasks remain
+  even after page reload. The project demonstrates DOM manipulation, event handling,
+  and state management using JavaScript.
+</p>
+        <div class="project-links">
+
+   <a href="https://todo-app-localstoragee.netlify.app/"
+   target="_blank">
+
+      Live Demo
+
+   </a>
+
+   <a href="https://github.com/hassanmansoori37/todo-app-local-storage"
+   target="_blank">
+
+      GitHub
+
+   </a>
+
+</div>
+      </div>
+
+
+      <div class="project-card">
+        <h3>Calculator App</h3>
+        <p>
+        Built a modern calculator application using HTML, CSS, and JavaScript.
+        The app supports basic arithmetic operations including addition, subtraction,
+        multiplication, division, percentage, and decimal calculations. It features
+        a clean glassmorphism UI, responsive design for all devices, and real-time
+        expression evaluation using JavaScript DOM manipulation and logic handling.
+       </p>
+        <div class="project-links">
+
+    <a href="https://calculatorhtml-css-js.netlify.app/"
+   target="_blank">
+
+      Live Demo
+
+   </a>
+
+   <a href="https://github.com/hassanmansoori37/Calculator-in-Html-CSS-JavaScript"
+   target="_blank">
+
+      GitHub
+
+   </a>
+
+</div>
+      </div>
+
+
+      <div class="project-card">
+  <h3>Flip Card Game</h3>
+  <p>
+    Developed an interactive flip card game using HTML, CSS, and JavaScript.
+    The game randomly assigns a King card among three cards, and the user has to
+    guess the correct card. It demonstrates DOM manipulation, random number
+    generation, and basic game logic using JavaScript.
+  </p>
+
+  <div class="project-links">
+
+    <a href="https://flip-game-project.netlify.app/" target="_blank">
+      Live Demo
+    </a>
+
+    <a href="https://github.com/hassanmansoori37/Flip-Game" target="_blank">
+      GitHub
+    </a>
+
+  </div>
+</div>
+  </section>
+
+
+  <!-- Experience -->
+
+  <section>
+
+    <h2 class="title">Experience</h2>
+
+    <div class="experience-box">
+
+      <p>
+        Currently working on frontend development projects
+        and internship tasks. Continuously improving my
+        problem-solving and web development skills.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section>
+
+    <h2 class="title">Testimonials</h2>
+
+    <div class="testimonial">
+
+      <p>
+        "Hassan is a hardworking and dedicated learner with
+        strong interest in web development and modern technologies."
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- Achievements -->
+
+  <section class="achievements">
+
+    <h2 class="title">Achievements</h2>
+
+    <ul>
+      <li>Completed Multiple Frontend Projects</li>
+      <li>Learning MERN Stack Development</li>
+      <li>Completed JavaScript Practice Applications</li>
+    </ul>
+
+  </section>
+
+
+  <!-- Contact -->
+
+<section id="contact">
+
+    <h2 class="title">Contact</h2>
+
+    <div class="contact-container">
+
+
+        <!-- Email -->
+
+        <a href="mailto:mansoorihassan409@gmail.com">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            mansoorihassan409@gmail.com
+
+        </a>
+
+
+
+        <!-- GitHub -->
+
+        <a href="https://github.com/hassanmansoori37"
+        target="_blank">
+
+            <i class="fa-brands fa-github"></i>
+
+            github.com/hassanmansoori37
+
+        </a>
+
+
+
+        <!-- LinkedIn -->
+
+        <a href="https://www.linkedin.com/in/hassan-mansoori-819152288/"
+        target="_blank">
+
+            <i class="fa-brands fa-linkedin"></i>
+
+            linkedin.com/in/hassan-mansoori
+
+        </a>
+
+    </div>
+
+</section>
+  </main>
+    
+  <!-- Footer -->
+
+  <footer>
+
+    <p>
+      © 2026 Hassan Portfolio | All Rights Reserved
+    </p>
+
+  </footer>
+
+  
     
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-<script>
-
-var typed = new Typed('#element', {
-
-   strings: [
-
-      'Frontend Developer',
-
-   'Frontend Developer | React Learner',
-
-   'Frontend Developer | React Learner | Learning MERN Stack',
-
-   'Frontend Developer | React Learner | Learning MERN Stack | Passionate About Web Development'
-
-   ],
-
-   typeSpeed: 40,
-
-   backSpeed: 10,
-
-   backDelay: 1000,
-
-   loop: true,
-
-}); 
-
-</script>
-
-
-
-
-
-
-
-
 
     <script src="app.js"></script>
 </body>
